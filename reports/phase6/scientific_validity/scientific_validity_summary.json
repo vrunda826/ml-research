@@ -1,0 +1,73 @@
+{
+  "analysis_timestamp": "2026-10-13T17:30:00+05:30",
+  "cohorts": {
+    "train_n": 125,
+    "train_depressed_n": 38,
+    "dev_n": 44,
+    "dev_depressed_n": 11
+  },
+  "experiment_a_rtm": {
+    "dummy_depressed_mean_discrepancy_train": 8.3333,
+    "egemaps_depressed_mean_discrepancy_train": 8.461,
+    "mfcc_depressed_mean_discrepancy_train": 8.2852,
+    "text_minilm_depressed_mean_discrepancy_train": 5.727,
+    "mm_mfcc_text_depressed_mean_discrepancy_train": 5.9592,
+    "rtm_explanation_pct_egemaps": 98.49,
+    "rtm_explanation_pct_mfcc": 100.0,
+    "rtm_explanation_pct_text": 68.72,
+    "pearson_r_y_D_egemaps": 0.9712,
+    "pearson_r_y_D_mfcc": 0.9567,
+    "pearson_r_y_D_text": 0.7358
+  },
+  "experiment_b_null": {
+    "egemaps_permutation_p_value": 0.43,
+    "mfcc_permutation_p_value": 0.485,
+    "text_permutation_p_value": 0.0,
+    "dummy_candidate_overlap_jaccard_train_q75_egemaps": 0.8182,
+    "dummy_candidate_overlap_jaccard_train_q75_mfcc": 0.8182,
+    "dummy_candidate_overlap_jaccard_dev_q75_egemaps": 0.75,
+    "dummy_candidate_overlap_jaccard_dev_q75_mfcc": 0.5
+  },
+  "experiment_c_stability": {
+    "dev_candidates_all_5_modalities_q75": [
+      "448",
+      "698"
+    ],
+    "dev_candidates_text_and_mm_q75": [
+      "381",
+      "441",
+      "448",
+      "698"
+    ],
+    "dev_depressed_sample_size": 11,
+    "small_denominator_caution": "Each candidate represents 9.09% of the depressed dev cohort"
+  },
+  "experiment_d_candidate_characterization": {
+    "train_cand_mean_phq8_q75_egemaps": 20.0,
+    "train_noncand_mean_phq8_q75_egemaps": 12.93,
+    "train_cand_mean_phq8_q75_mfcc": 19.8,
+    "train_noncand_mean_phq8_q75_mfcc": 13.0,
+    "train_cand_mean_phq8_q75_text": 18.7,
+    "train_noncand_mean_phq8_q75_text": 13.39,
+    "finding": "Candidates are overwhelmingly higher-severity PHQ-8 participants, not a distinct linguistic or acoustic subtype"
+  },
+  "verdict_and_answers": {
+    "q1_numerically_reproducible": true,
+    "q2_better_than_dummy": true,
+    "q2_details": "Text and multimodal models significantly outperform dummy (R2=0.21-0.28 vs -0.00). Acoustic models do not outperform dummy (R2=-0.05 to 0.10).",
+    "q3_rtm_explains_positive_residuals": true,
+    "q3_details": "Acoustic positive residuals (~8.3 pts) are ~100% explained by RTM and shrinkage. Text positive residuals (~5.7 pts) are partially dampened by genuine signal but still reflect RTM compression.",
+    "q4_hsed_subgroup_established_beyond_rtm": false,
+    "q4_details": "No. The subgroup overwhelmingly identifies the highest-scoring PHQ-8 participants whose residuals are mechanically larger due to global mean shrinkage.",
+    "q5_robust_vs_inconclusive": {
+      "robust": "Numerical reproducibility, text predictive signal, RTM mathematical coupling, acoustic lack of predictive signal.",
+      "exploratory": "Multimodal candidate overlap, candidate text keyword/topic exploration.",
+      "inconclusive": "Whether HSED reflects genuine emotional concealment, due to lack of ground truth masking labels, small sample size (N=11 dev), and whole-dialogue transcript limitation."
+    },
+    "q6_proceed_to_phase7": false,
+    "q6_details": "Proceeding directly to Phase 7 with the assumption that HSED is a clinically valid masking phenotype is NOT justified. However, treating discrepancy as an algorithmic difficulty-weighting reweighting mechanism can be investigated with strict exploratory disclaimers.",
+    "q7_most_important_limitation": "Lack of independent clinical masking ground truth combined with mathematical coupling between PHQ-8 target and residual definition.",
+    "final_verdict": "NOT SUPPORTED BY CURRENT ANALYSES",
+    "verdict_rationale": "The positive discrepancy pattern among depressed participants and candidate subgroup selection are substantially explained by ordinary regression shrinkage toward the mean and target conditioning, perfectly matching a zero-information dummy baseline (p=0.43 for acoustic models vs permutation null)."
+  }
+}
