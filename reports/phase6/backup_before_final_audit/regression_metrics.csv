@@ -1,0 +1,7 @@
+model_id,modality,model_name,n_features,n_train,n_dev,mae,rmse,r2,spearman_rho,spearman_pvalue,spearman_note,notes,baseline_tier,alpha
+B0_reg,none,Dummy_Mean_Regressor,0,125,44,4.702,5.743,-0.0003,,,Spearman rank correlation undefined on constant inputs (zero variance in true or predicted values).,Always predicts training PHQ-8 mean (6.472),B0_Reg (Dummy),
+B1_reg,egemaps,Ridge_Audio_eGeMAPS,46,125,44,4.932,6.1414,-0.1439,-0.1687,0.2736,,StandardScaler + Ridge(alpha=100.0) on 46 features,B1_Reg (Audio_eGeMAPS),100.0
+B2_reg,mfcc,Ridge_Audio_MFCC,78,125,44,4.4306,5.4335,0.1046,0.2865,0.0593,,StandardScaler + Ridge(alpha=100.0) on 78 features,B2_Reg (Audio_MFCC),100.0
+B3_reg,text_minilm,Ridge_Text_MiniLM,384,125,44,3.9876,5.1125,0.2073,0.4793,0.001,,StandardScaler + Ridge(alpha=100.0) on 384 features,B3_Reg (Text_MiniLM),100.0
+B4_reg,mm_egemaps_text,Ridge_MM_eGeMAPS_Text,430,125,44,4.0497,5.1721,0.1887,0.4348,0.0032,,StandardScaler + Ridge(alpha=100.0) on 430 features,B4_Reg (MM_eGeMAPS_Text),100.0
+B5_reg,mm_mfcc_text,Ridge_MM_MFCC_Text,462,125,44,3.8032,4.8635,0.2826,0.545,0.0001,,StandardScaler + Ridge(alpha=100.0) on 462 features,B5_Reg (MM_MFCC_Text),100.0

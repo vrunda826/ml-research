@@ -1,0 +1,22 @@
+model_id,modality,model_name,n_features,n_train,n_dev,mae,rmse,r2,spearman_rho,spearman_pvalue,spearman_note,notes,baseline_tier,alpha,is_default
+B0_reg,none,Dummy_Mean_Regressor,0,125,44,4.702,5.743,-0.0003,,,Spearman rank correlation undefined on constant inputs (zero variance in true or predicted values).,Always predicts training PHQ-8 mean (6.472),B0_Reg (Dummy),,
+Ridge_egemaps_a0.1,egemaps,Ridge_Audio_eGeMAPS_a0.1,46,125,44,5.2728,6.6759,-0.3516,-0.0481,0.7565,,,Ridge_a0.1,0.1,False
+Ridge_egemaps_a1.0,egemaps,Ridge_Audio_eGeMAPS_a1.0,46,125,44,5.3763,6.5931,-0.3183,-0.147,0.341,,,Ridge_a1.0,1.0,False
+Ridge_egemaps_a10.0,egemaps,Ridge_Audio_eGeMAPS_a10.0,46,125,44,5.1279,6.3694,-0.2304,-0.1765,0.2517,,,Ridge_a10.0,10.0,False
+Ridge_egemaps_a100.0,egemaps,Ridge_Audio_eGeMAPS_a100.0,46,125,44,4.932,6.1414,-0.1439,-0.1687,0.2736,,,Ridge_a100.0,100.0,True
+Ridge_mfcc_a0.1,mfcc,Ridge_Audio_MFCC_a0.1,78,125,44,7.1924,8.5364,-1.21,0.4348,0.0032,,,Ridge_a0.1,0.1,False
+Ridge_mfcc_a1.0,mfcc,Ridge_Audio_MFCC_a1.0,78,125,44,6.0386,7.4277,-0.6732,0.4643,0.0015,,,Ridge_a1.0,1.0,False
+Ridge_mfcc_a10.0,mfcc,Ridge_Audio_MFCC_a10.0,78,125,44,4.7122,5.8186,-0.0268,0.4717,0.0012,,,Ridge_a10.0,10.0,False
+Ridge_mfcc_a100.0,mfcc,Ridge_Audio_MFCC_a100.0,78,125,44,4.4306,5.4335,0.1046,0.2865,0.0593,,,Ridge_a100.0,100.0,True
+Ridge_text_minilm_a0.1,text_minilm,Ridge_Text_MiniLM_a0.1,384,125,44,5.5206,6.6951,-0.3594,0.2625,0.0851,,,Ridge_a0.1,0.1,False
+Ridge_text_minilm_a1.0,text_minilm,Ridge_Text_MiniLM_a1.0,384,125,44,5.4765,6.6449,-0.3391,0.2597,0.0887,,,Ridge_a1.0,1.0,False
+Ridge_text_minilm_a10.0,text_minilm,Ridge_Text_MiniLM_a10.0,384,125,44,5.1189,6.2485,-0.1841,0.3089,0.0413,,,Ridge_a10.0,10.0,False
+Ridge_text_minilm_a100.0,text_minilm,Ridge_Text_MiniLM_a100.0,384,125,44,3.9876,5.1125,0.2073,0.4793,0.001,,,Ridge_a100.0,100.0,True
+Ridge_mm_egemaps_text_a0.1,mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a0.1,430,125,44,5.5023,6.7598,-0.3858,0.2311,0.1313,,,Ridge_a0.1,0.1,False
+Ridge_mm_egemaps_text_a1.0,mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a1.0,430,125,44,5.4615,6.7095,-0.3653,0.2311,0.1313,,,Ridge_a1.0,1.0,False
+Ridge_mm_egemaps_text_a10.0,mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a10.0,430,125,44,5.1185,6.309,-0.2072,0.2578,0.0911,,,Ridge_a10.0,10.0,False
+Ridge_mm_egemaps_text_a100.0,mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a100.0,430,125,44,4.0497,5.1721,0.1887,0.4348,0.0032,,,Ridge_a100.0,100.0,True
+Ridge_mm_mfcc_text_a0.1,mm_mfcc_text,Ridge_MM_MFCC_Text_a0.1,462,125,44,4.8545,5.8707,-0.0453,0.419,0.0046,,,Ridge_a0.1,0.1,False
+Ridge_mm_mfcc_text_a1.0,mm_mfcc_text,Ridge_MM_MFCC_Text_a1.0,462,125,44,4.8293,5.8425,-0.0352,0.4364,0.0031,,,Ridge_a1.0,1.0,False
+Ridge_mm_mfcc_text_a10.0,mm_mfcc_text,Ridge_MM_MFCC_Text_a10.0,462,125,44,4.6219,5.6121,0.0448,0.4649,0.0015,,,Ridge_a10.0,10.0,False
+Ridge_mm_mfcc_text_a100.0,mm_mfcc_text,Ridge_MM_MFCC_Text_a100.0,462,125,44,3.8032,4.8635,0.2826,0.545,0.0001,,,Ridge_a100.0,100.0,True

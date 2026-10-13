@@ -1,0 +1,87 @@
+{
+  "n_training_participants": 125,
+  "n_folds": 5,
+  "random_seed": 42,
+  "default_alpha": 100.0,
+  "participants_per_fold": {
+    "fold_1": 25,
+    "fold_2": 25,
+    "fold_3": 25,
+    "fold_4": 25,
+    "fold_5": 25
+  },
+  "oof_verification": {
+    "all_training_participants_predicted": true,
+    "one_prediction_per_participant_modality": true,
+    "disjoint_folds": true,
+    "zero_leakage_from_dev": true
+  },
+  "oof_regression_metrics": {
+    "dummy": {
+      "modality_name": "Dummy_Mean_Regressor",
+      "n_train": 125,
+      "mae": 5.3117,
+      "rmse": 6.3279,
+      "r2": -0.0081,
+      "spearman_rho": -0.1318,
+      "spearman_pvalue": 0.1429,
+      "mean_discrepancy": 0.0,
+      "std_discrepancy": 6.3279
+    },
+    "egemaps": {
+      "modality_name": "Audio_eGeMAPS",
+      "n_train": 125,
+      "mae": 5.3963,
+      "rmse": 6.4807,
+      "r2": -0.0573,
+      "spearman_rho": 0.0453,
+      "spearman_pvalue": 0.6156,
+      "mean_discrepancy": 0.0615,
+      "std_discrepancy": 6.4804
+    },
+    "mfcc": {
+      "modality_name": "Audio_MFCC",
+      "n_train": 125,
+      "mae": 5.2768,
+      "rmse": 6.4006,
+      "r2": -0.0314,
+      "spearman_rho": 0.182,
+      "spearman_pvalue": 0.0422,
+      "mean_discrepancy": 0.0292,
+      "std_discrepancy": 6.4005
+    },
+    "text_minilm": {
+      "modality_name": "Text_MiniLM",
+      "n_train": 125,
+      "mae": 4.4875,
+      "rmse": 5.6021,
+      "r2": 0.2099,
+      "spearman_rho": 0.5137,
+      "spearman_pvalue": 0.0,
+      "mean_discrepancy": 0.0702,
+      "std_discrepancy": 5.6017
+    },
+    "mm_egemaps_text": {
+      "modality_name": "MM_eGeMAPS_Text",
+      "n_train": 125,
+      "mae": 4.594,
+      "rmse": 5.7915,
+      "r2": 0.1556,
+      "spearman_rho": 0.4818,
+      "spearman_pvalue": 0.0,
+      "mean_discrepancy": 0.1324,
+      "std_discrepancy": 5.7899
+    },
+    "mm_mfcc_text": {
+      "modality_name": "MM_MFCC_Text",
+      "n_train": 125,
+      "mae": 4.5188,
+      "rmse": 5.6554,
+      "r2": 0.1948,
+      "spearman_rho": 0.5449,
+      "spearman_pvalue": 0.0,
+      "mean_discrepancy": 0.0868,
+      "std_discrepancy": 5.6548
+    }
+  }
+}

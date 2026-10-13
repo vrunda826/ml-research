@@ -1,0 +1,16 @@
+modality,model_name,quantile,threshold_value,n_train_phq8_ge_10,n_train_selected,train_selected_fraction,quantile_method
+egemaps,Ridge_Audio_eGeMAPS_a100,0.7,10.1495,38,12,0.3158,linear
+egemaps,Ridge_Audio_eGeMAPS_a100,0.75,10.9798,38,10,0.2632,linear
+egemaps,Ridge_Audio_eGeMAPS_a100,0.8,12.8596,38,8,0.2105,linear
+mfcc,Ridge_Audio_MFCC_a100,0.7,10.3751,38,12,0.3158,linear
+mfcc,Ridge_Audio_MFCC_a100,0.75,11.292,38,10,0.2632,linear
+mfcc,Ridge_Audio_MFCC_a100,0.8,11.7806,38,8,0.2105,linear
+text_minilm,Ridge_Text_MiniLM_a100,0.7,7.7454,38,12,0.3158,linear
+text_minilm,Ridge_Text_MiniLM_a100,0.75,8.272,38,10,0.2632,linear
+text_minilm,Ridge_Text_MiniLM_a100,0.8,9.1525,38,8,0.2105,linear
+mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a100,0.7,7.88,38,12,0.3158,linear
+mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a100,0.75,8.1087,38,10,0.2632,linear
+mm_egemaps_text,Ridge_MM_eGeMAPS_Text_a100,0.8,9.7897,38,8,0.2105,linear
+mm_mfcc_text,Ridge_MM_MFCC_Text_a100,0.7,7.8056,38,12,0.3158,linear
+mm_mfcc_text,Ridge_MM_MFCC_Text_a100,0.75,8.6088,38,10,0.2632,linear
+mm_mfcc_text,Ridge_MM_MFCC_Text_a100,0.8,9.4935,38,8,0.2105,linear
