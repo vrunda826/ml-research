@@ -1,0 +1,55 @@
+eval_split,modality,metric_name,previously_reported_value,recomputed_value,absolute_difference,status,explanation
+dev,egemaps,MAE,4.932,4.932,3e-06,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,egemaps,RMSE,6.1414,6.1414,4.6e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,egemaps,R2,-0.1439,-0.1439,1e-06,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,egemaps,Spearman_rho,-0.1687,-0.1687,3.1e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mfcc,MAE,4.4306,4.4306,4.6e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mfcc,RMSE,5.4335,5.4335,1.7e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mfcc,R2,0.1046,0.1046,2.9e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mfcc,Spearman_rho,0.2865,0.2865,2.5e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_egemaps_text,MAE,4.0497,4.0497,4.1e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_egemaps_text,RMSE,5.1721,5.1721,3e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_egemaps_text,R2,0.1887,0.1887,1.1e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_egemaps_text,Spearman_rho,0.4348,0.4348,1.1e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_mfcc_text,MAE,3.8032,3.8032,1.9e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_mfcc_text,RMSE,4.8635,4.8635,4.5e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_mfcc_text,R2,0.2826,0.2826,1.5e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,mm_mfcc_text,Spearman_rho,0.545,0.545,3.7e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,none,MAE,4.702,4.702,0.0,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,none,RMSE,5.743,5.743,1.5e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,none,R2,-0.0003,-0.0003,1.9e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,none,Spearman_rho,,,0.0,PASS,Constant predictions; Spearman correlation mathematically undefined
+dev,text_minilm,MAE,3.9876,3.9876,4.3e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,text_minilm,RMSE,5.1125,5.1125,4e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,text_minilm,R2,0.2073,0.2073,2e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+dev,text_minilm,Spearman_rho,0.4793,0.4793,1e-05,PASS,Verified from dev_regression_predictions.csv against ground-truth phq8_true
+train_oof,egemaps,MAE,5.3963,5.3963,2.5e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,egemaps,RMSE,6.4807,6.4807,2.8e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,egemaps,R2,-0.0573,-0.0573,4.7e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,egemaps,Mean_Discrepancy,0.0615,0.0615,3.1e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,egemaps,Std_Discrepancy,6.4804,6.4804,2e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mfcc,MAE,5.2768,5.2768,8e-06,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mfcc,RMSE,6.4006,6.4006,1e-06,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mfcc,R2,-0.0314,-0.0314,2e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mfcc,Mean_Discrepancy,0.0292,0.0292,1.6e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mfcc,Std_Discrepancy,6.4005,6.4005,3.3e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_egemaps_text,MAE,4.594,4.594,2e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_egemaps_text,RMSE,5.7915,5.7915,4.5e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_egemaps_text,R2,0.1556,0.1556,9e-06,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_egemaps_text,Mean_Discrepancy,0.1324,0.1324,5e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_egemaps_text,Std_Discrepancy,5.7899,5.7899,4.2e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_mfcc_text,MAE,4.5188,4.5188,1e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_mfcc_text,RMSE,5.6554,5.6554,1.7e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_mfcc_text,R2,0.1948,0.1948,5e-06,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_mfcc_text,Mean_Discrepancy,0.0868,0.0868,3.2e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,mm_mfcc_text,Std_Discrepancy,5.6548,5.6548,4.9e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,dummy,MAE,5.3117,5.3117,2e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,dummy,RMSE,6.3279,6.3279,4.4e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,dummy,R2,-0.0081,-0.0081,3e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,dummy,Mean_Discrepancy,0.0,0.0,0.0,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,dummy,Std_Discrepancy,6.3279,6.3279,4.4e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,text_minilm,MAE,4.4875,4.4875,3.7e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,text_minilm,RMSE,5.6021,5.6021,9e-06,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,text_minilm,R2,0.2099,0.2099,8e-06,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,text_minilm,Mean_Discrepancy,0.0702,0.0702,1.1e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth
+train_oof,text_minilm,Std_Discrepancy,5.6017,5.6017,4.9e-05,PASS,Verified from train_oof_predictions.csv against fold ground truth

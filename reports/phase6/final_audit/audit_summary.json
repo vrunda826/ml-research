@@ -1,0 +1,64 @@
+{
+  "audit_timestamp": "2026-10-13T10:25:00+05:30",
+  "project_root": "D:/ml-research",
+  "overall_status": "READY_FOR_SCIENTIFIC_REVIEW",
+  "dataset_integrity": {
+    "status": "PASS",
+    "train_cohort_size": 125,
+    "dev_cohort_size": 44,
+    "test_cohort_size": 0,
+    "disjoint_splits": true,
+    "target_range_valid": true,
+    "leakage_free": true
+  },
+  "oof_cross_validation": {
+    "status": "PASS",
+    "n_folds": 5,
+    "participants_per_fold": 25,
+    "total_train_predictions": 750,
+    "unique_train_pids_predicted": 125,
+    "zero_dev_leakage": true,
+    "unrounded_discrepancies": true
+  },
+  "numerical_reconciliation": {
+    "status": "PASS",
+    "total_metrics_audited": 54,
+    "passed_metrics": 54,
+    "failed_metrics": 0,
+    "max_absolute_difference": 5e-05
+  },
+  "hsed_threshold_derivation": {
+    "status": "PASS",
+    "derived_strictly_from_s_train": true,
+    "s_train_eligible_count": 38,
+    "quantiles_audited": [
+      0.7,
+      0.75,
+      0.8
+    ],
+    "frozen_application_to_dev": true
+  },
+  "subgroup_overlap_analysis": {
+    "status": "PASS",
+    "distinguishes_train_and_dev_overlap": true,
+    "pairwise_comparisons_count": 20
+  },
+  "statistical_interpretation_guard": {
+    "status": "PASS",
+    "positive_residuals_distinguished_from_clinical_masking": true,
+    "regression_to_mean_effect_documented": true,
+    "no_ground_truth_masking_labels_disclaimer_present": true
+  },
+  "candidate_participant_audit": {
+    "status": "CORRECTED",
+    "all_modality_dev_candidates_q75": [
+      "448",
+      "698"
+    ],
+    "text_and_multimodal_dev_candidates_q75": [
+      "381",
+      "441"
+    ],
+    "correction_note": "Previous narrative had erroneously identified 441 instead of 698 as the second all-modality candidate. Corrected in audit."
+  }
+}
