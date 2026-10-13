@@ -1,0 +1,5 @@
+Split,Official_Participant_Count,PHQ8_Labels_Available,Transcript_Available,eGeMAPS_Available,MFCC_Available,All_Required_Modalities_Available,Extracted_Cohort_Coverage_Pct,Notes
+Train,163,163,125,125,125,125,76.69,"38 participants present in AVEC 2019 metadata CSV but absent from local downloaded raw tar archives"
+Development,56,56,44,44,44,44,78.57,"12 participants present in AVEC 2019 metadata CSV but absent from local downloaded raw tar archives"
+Test,56,0,0,0,0,0,0.00,"Test split labels unreleased in AVEC 2019 challenge; raw audio/transcripts absent from local download"
+Total,275,219,169,169,169,169,61.45,"169 complete multi-modal participants extracted and validated across train and development splits"

@@ -1,0 +1,7 @@
+model_id,model_name,feature_set,n_features,n_train,n_dev,accuracy,macro_f1,depression_f1,depression_precision,depression_recall,non_depressed_f1,roc_auc,pr_auc,tp,fp,fn,tn,notes
+B3a_lr,MM_eGeMAPS_Text_LogisticRegression,egemaps_text,430,125,44,0.7273,0.581,0.3333,0.4286,0.2727,0.8286,0.7273,0.5378,3,4,8,29,StandardScaler + LogisticRegression on eGeMAPS (46) + MiniLM (384)
+B3a_bal,MM_eGeMAPS_Text_LogisticRegression_Balanced,egemaps_text,430,125,44,0.75,0.6308,0.4211,0.5,0.3636,0.8406,0.7273,0.5378,4,4,7,29,StandardScaler + LogisticRegression (balanced weights)
+B3a_svm,MM_eGeMAPS_Text_LinearSVM,egemaps_text,430,125,44,0.75,0.6308,0.4211,0.5,0.3636,0.8406,0.7025,0.4897,4,4,7,29,StandardScaler + Linear SVM
+B3b_lr,MM_MFCC_Text_LogisticRegression,mfcc_text,462,125,44,0.7727,0.6765,0.5,0.5556,0.4545,0.8529,0.7769,0.5847,5,4,6,29,StandardScaler + LogisticRegression on MFCC (78) + MiniLM (384)
+B3b_bal,MM_MFCC_Text_LogisticRegression_Balanced,mfcc_text,462,125,44,0.75,0.656,0.4762,0.5,0.4545,0.8358,0.7769,0.5847,5,5,6,28,StandardScaler + LogisticRegression (balanced weights)
+B3b_svm,MM_MFCC_Text_LinearSVM,mfcc_text,462,125,44,0.7727,0.6765,0.5,0.5556,0.4545,0.8529,0.7906,0.5867,5,4,6,29,StandardScaler + Linear SVM

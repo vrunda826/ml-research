@@ -1,0 +1,276 @@
+participant_id,split,gender,has_ground_truth_phq,phq_score,phq_binary_cutoff10,official_phq_binary,has_transcript,has_mfcc,has_egemaps,all_features_available,missing_features,data_status,avec_id
+302,train,male,True,4,0,0,True,True,True,True,none,COMPLETE,training_001
+303,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_002
+304,train,female,True,6,0,0,True,True,True,True,none,COMPLETE,training_003
+305,train,male,True,7,0,0,True,True,True,True,none,COMPLETE,training_004
+307,train,female,True,4,0,0,True,True,True,True,none,COMPLETE,training_005
+308,train,female,True,22,1,1,True,True,True,True,none,COMPLETE,training_006
+309,train,male,True,15,1,1,True,True,True,True,none,COMPLETE,training_007
+310,train,male,True,4,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_008
+311,train,female,True,21,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_009
+312,train,male,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_010
+313,train,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_011
+314,train,female,True,1,0,0,True,True,True,True,none,COMPLETE,training_012
+315,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_013
+316,train,male,True,6,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_014
+318,train,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_015
+319,train,male,True,13,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_016
+322,train,male,True,5,0,0,True,True,True,True,none,COMPLETE,training_017
+323,train,female,True,1,0,0,True,True,True,True,none,COMPLETE,training_018
+324,train,male,True,5,0,0,True,True,True,True,none,COMPLETE,training_019
+325,train,female,True,10,1,0,True,True,True,True,none,COMPLETE,training_020
+326,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_021
+327,train,female,True,4,0,0,True,True,True,True,none,COMPLETE,training_022
+328,train,male,True,4,0,0,True,True,True,True,none,COMPLETE,training_023
+329,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_024
+330,train,male,True,12,1,1,True,True,True,True,none,COMPLETE,training_025
+332,train,female,True,18,1,1,True,True,True,True,none,COMPLETE,training_026
+333,train,male,True,5,0,0,True,True,True,True,none,COMPLETE,training_027
+335,train,female,True,12,1,0,True,True,True,True,none,COMPLETE,training_028
+337,train,female,True,10,1,1,True,True,True,True,none,COMPLETE,training_029
+338,train,female,True,15,1,1,True,True,True,True,none,COMPLETE,training_030
+339,train,male,True,11,1,1,True,True,True,True,none,COMPLETE,training_031
+340,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_032
+341,train,female,True,7,0,0,True,True,True,True,none,COMPLETE,training_033
+345,train,female,True,15,1,1,True,True,True,True,none,COMPLETE,training_034
+346,train,female,True,23,1,1,True,True,True,True,none,COMPLETE,training_035
+348,train,female,True,20,1,1,True,True,True,True,none,COMPLETE,training_036
+349,train,male,True,5,0,0,True,True,True,True,none,COMPLETE,training_037
+351,train,female,True,14,1,1,True,True,True,True,none,COMPLETE,training_038
+352,train,female,True,10,1,0,True,True,True,True,none,COMPLETE,training_039
+353,train,female,True,11,1,1,True,True,True,True,none,COMPLETE,training_040
+354,train,male,True,18,1,1,True,True,True,True,none,COMPLETE,training_041
+355,train,male,True,10,1,1,True,True,True,True,none,COMPLETE,training_042
+356,train,male,True,10,1,0,True,True,True,True,none,COMPLETE,training_043
+357,train,male,True,7,0,0,True,True,True,True,none,COMPLETE,training_044
+358,train,male,True,7,0,0,True,True,True,True,none,COMPLETE,training_045
+359,train,male,True,13,1,1,True,True,True,True,none,COMPLETE,training_046
+360,train,female,True,4,0,0,True,True,True,True,none,COMPLETE,training_047
+361,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_048
+362,train,female,True,20,1,1,True,True,True,True,none,COMPLETE,training_049
+363,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_050
+364,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_051
+366,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_052
+367,train,male,True,19,1,1,True,True,True,True,none,COMPLETE,training_053
+368,train,male,True,7,0,0,True,True,True,True,none,COMPLETE,training_054
+369,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_055
+370,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_056
+372,train,female,True,13,1,1,True,True,True,True,none,COMPLETE,training_057
+375,train,male,True,5,0,0,True,True,True,True,none,COMPLETE,training_058
+376,train,female,True,12,1,1,True,True,True,True,none,COMPLETE,training_059
+377,train,female,True,16,1,1,True,True,True,True,none,COMPLETE,training_060
+378,train,female,True,1,0,0,True,True,True,True,none,COMPLETE,training_061
+379,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_062
+380,train,male,True,10,1,0,True,True,True,True,none,COMPLETE,training_063
+383,train,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_064
+384,train,male,True,15,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_065
+385,train,male,True,8,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_066
+386,train,female,True,11,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_067
+387,train,male,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_068
+389,train,male,True,14,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_069
+390,train,male,True,9,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_070
+391,train,female,True,9,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_071
+392,train,female,True,1,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_072
+395,train,female,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_073
+396,train,male,True,5,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_074
+397,train,male,True,5,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_075
+399,train,female,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_076
+400,train,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_077
+403,train,female,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_078
+404,train,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_079
+405,train,female,True,17,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_080
+406,train,female,True,2,0,0,True,True,True,True,none,COMPLETE,training_081
+407,train,male,True,3,0,0,True,True,True,True,none,COMPLETE,training_082
+409,train,male,True,10,1,0,True,True,True,True,none,COMPLETE,training_083
+410,train,female,True,12,1,1,True,True,True,True,none,COMPLETE,training_084
+411,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_085
+413,train,female,True,10,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_086
+414,train,female,True,16,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_087
+416,train,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_088
+417,train,female,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_089
+418,train,female,True,10,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_090
+419,train,female,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_091
+420,train,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_092
+421,train,female,True,10,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_093
+422,train,female,True,12,1,0,True,True,True,True,none,COMPLETE,training_094
+424,train,female,True,3,0,0,True,True,True,True,none,COMPLETE,training_095
+426,train,male,True,20,1,1,True,True,True,True,none,COMPLETE,training_096
+427,train,female,True,5,0,0,True,True,True,True,none,COMPLETE,training_097
+428,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_098
+429,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_099
+430,train,male,True,3,0,0,True,True,True,True,none,COMPLETE,training_100
+432,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_101
+434,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_102
+436,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_103
+438,train,female,True,2,0,0,True,True,True,True,none,COMPLETE,training_104
+439,train,female,True,1,0,0,True,True,True,True,none,COMPLETE,training_105
+440,train,female,True,19,1,1,True,True,True,True,none,COMPLETE,training_106
+443,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_107
+444,train,female,True,7,0,0,True,True,True,True,none,COMPLETE,training_108
+445,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_109
+446,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_110
+447,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_111
+449,train,female,True,2,0,0,True,True,True,True,none,COMPLETE,training_112
+450,train,female,True,9,0,0,True,True,True,True,none,COMPLETE,training_113
+452,train,female,True,1,0,0,True,True,True,True,none,COMPLETE,training_114
+453,train,male,True,17,1,1,True,True,True,True,none,COMPLETE,training_115
+456,train,female,True,6,0,0,True,True,True,True,none,COMPLETE,training_116
+457,train,male,True,3,0,0,True,True,True,True,none,COMPLETE,training_117
+458,train,female,True,5,0,0,True,True,True,True,none,COMPLETE,training_118
+459,train,male,True,16,1,0,True,True,True,True,none,COMPLETE,training_119
+461,train,male,True,17,1,1,True,True,True,True,none,COMPLETE,training_120
+462,train,female,True,9,0,0,True,True,True,True,none,COMPLETE,training_121
+463,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_122
+464,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_123
+466,train,female,True,9,0,0,True,True,True,True,none,COMPLETE,training_124
+467,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_125
+469,train,female,True,3,0,0,True,True,True,True,none,COMPLETE,training_126
+470,train,female,True,3,0,0,True,True,True,True,none,COMPLETE,training_127
+471,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_128
+472,train,female,True,3,0,0,True,True,True,True,none,COMPLETE,training_129
+474,train,male,True,4,0,0,True,True,True,True,none,COMPLETE,training_130
+476,train,male,True,3,0,0,True,True,True,True,none,COMPLETE,training_131
+477,train,female,True,2,0,0,True,True,True,True,none,COMPLETE,training_132
+478,train,female,True,1,0,0,True,True,True,True,none,COMPLETE,training_133
+481,train,male,True,7,0,0,True,True,True,True,none,COMPLETE,training_134
+482,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_135
+483,train,male,True,15,1,0,True,True,True,True,none,COMPLETE,training_136
+485,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_137
+487,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_138
+488,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_139
+489,train,male,True,3,0,0,True,True,True,True,none,COMPLETE,training_140
+490,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_141
+491,train,female,True,8,0,0,True,True,True,True,none,COMPLETE,training_142
+492,train,female,True,0,0,0,True,True,True,True,none,COMPLETE,training_143
+601,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_144
+603,train,male,True,4,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_145
+608,train,male,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_146
+612,train,male,True,1,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_147
+628,train,female,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_148
+633,train,female,True,10,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_149
+641,train,male,True,17,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,training_150
+654,train,male,True,6,0,0,True,True,True,True,none,COMPLETE,training_151
+660,train,male,True,2,0,0,True,True,True,True,none,COMPLETE,training_152
+662,train,female,True,2,0,0,True,True,True,True,none,COMPLETE,training_153
+673,train,male,True,13,1,1,True,True,True,True,none,COMPLETE,training_154
+677,train,male,True,12,1,1,True,True,True,True,none,COMPLETE,training_155
+680,train,male,True,22,1,1,True,True,True,True,none,COMPLETE,training_156
+684,train,male,True,18,1,1,True,True,True,True,none,COMPLETE,training_157
+692,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_158
+695,train,male,True,7,0,0,True,True,True,True,none,COMPLETE,training_159
+697,train,male,True,5,0,0,True,True,True,True,none,COMPLETE,training_160
+702,train,male,True,0,0,0,True,True,True,True,none,COMPLETE,training_161
+703,train,male,True,8,0,0,True,True,True,True,none,COMPLETE,training_162
+707,train,male,True,1,0,0,True,True,True,True,none,COMPLETE,training_163
+300,dev,male,True,2,0,0,True,True,True,True,none,COMPLETE,development_01
+301,dev,male,True,3,0,0,True,True,True,True,none,COMPLETE,development_02
+306,dev,female,True,0,0,0,True,True,True,True,none,COMPLETE,development_03
+317,dev,male,True,8,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_04
+320,dev,female,True,11,1,0,True,True,True,True,none,COMPLETE,development_05
+321,dev,female,True,20,1,1,True,True,True,True,none,COMPLETE,development_06
+331,dev,male,True,8,0,0,True,True,True,True,none,COMPLETE,development_07
+334,dev,male,True,5,0,0,True,True,True,True,none,COMPLETE,development_08
+336,dev,male,True,7,0,0,True,True,True,True,none,COMPLETE,development_09
+343,dev,male,True,9,0,0,True,True,True,True,none,COMPLETE,development_10
+344,dev,male,True,11,1,0,True,True,True,True,none,COMPLETE,development_11
+347,dev,male,True,16,1,1,True,True,True,True,none,COMPLETE,development_12
+350,dev,female,True,11,1,1,True,True,True,True,none,COMPLETE,development_13
+365,dev,male,True,12,1,1,True,True,True,True,none,COMPLETE,development_14
+371,dev,male,True,9,0,0,True,True,True,True,none,COMPLETE,development_15
+373,dev,male,True,9,0,0,True,True,True,True,none,COMPLETE,development_16
+374,dev,female,True,2,0,0,True,True,True,True,none,COMPLETE,development_17
+381,dev,male,True,16,1,1,True,True,True,True,none,COMPLETE,development_18
+382,dev,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_19
+388,dev,male,True,17,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_20
+393,dev,male,True,2,0,0,True,True,True,True,none,COMPLETE,development_21
+401,dev,female,True,9,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_22
+402,dev,female,True,11,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_23
+408,dev,female,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_24
+412,dev,male,True,12,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_25
+415,dev,female,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_26
+423,dev,female,True,0,0,0,True,True,True,True,none,COMPLETE,development_27
+425,dev,female,True,6,0,0,True,True,True,True,none,COMPLETE,development_28
+431,dev,female,True,2,0,0,True,True,True,True,none,COMPLETE,development_29
+433,dev,male,True,10,1,0,True,True,True,True,none,COMPLETE,development_30
+435,dev,female,True,8,0,0,True,True,True,True,none,COMPLETE,development_31
+437,dev,male,True,0,0,0,True,True,True,True,none,COMPLETE,development_32
+441,dev,female,True,18,1,1,True,True,True,True,none,COMPLETE,development_33
+442,dev,male,True,6,0,0,True,True,True,True,none,COMPLETE,development_34
+448,dev,male,True,18,1,1,True,True,True,True,none,COMPLETE,development_35
+451,dev,female,True,4,0,0,True,True,True,True,none,COMPLETE,development_36
+454,dev,female,True,1,0,0,True,True,True,True,none,COMPLETE,development_37
+455,dev,female,True,1,0,0,True,True,True,True,none,COMPLETE,development_38
+465,dev,male,True,2,0,0,True,True,True,True,none,COMPLETE,development_39
+468,dev,male,True,4,0,0,True,True,True,True,none,COMPLETE,development_40
+473,dev,female,True,0,0,0,True,True,True,True,none,COMPLETE,development_41
+475,dev,male,True,6,0,0,True,True,True,True,none,COMPLETE,development_42
+479,dev,male,True,7,0,0,True,True,True,True,none,COMPLETE,development_43
+480,dev,male,True,1,0,0,True,True,True,True,none,COMPLETE,development_44
+484,dev,female,True,9,0,0,True,True,True,True,none,COMPLETE,development_45
+486,dev,female,True,4,0,0,True,True,True,True,none,COMPLETE,development_46
+617,dev,male,True,12,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_47
+627,dev,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_48
+632,dev,female,True,1,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_49
+653,dev,female,True,4,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,development_50
+657,dev,male,True,0,0,0,True,True,True,True,none,COMPLETE,development_51
+667,dev,male,True,3,0,0,True,True,True,True,none,COMPLETE,development_52
+670,dev,male,True,0,0,0,True,True,True,True,none,COMPLETE,development_53
+687,dev,male,True,7,0,0,True,True,True,True,none,COMPLETE,development_54
+698,dev,male,True,19,1,1,True,True,True,True,none,COMPLETE,development_55
+713,dev,male,True,0,0,0,True,True,True,True,none,COMPLETE,development_56
+600,test,female,True,5,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+602,test,female,True,13,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+604,test,male,True,12,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+605,test,male,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+606,test,female,True,5,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+607,test,female,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+609,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+615,test,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+618,test,male,True,4,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+619,test,female,True,6,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+620,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+622,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+623,test,male,True,9,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+624,test,male,True,22,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+625,test,male,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+626,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+629,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+631,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+634,test,female,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+635,test,male,True,9,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+636,test,female,True,15,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+637,test,female,True,16,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+638,test,female,True,19,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+640,test,male,True,17,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+649,test,male,True,19,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+650,test,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+651,test,male,True,5,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+652,test,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+655,test,female,True,12,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+656,test,male,True,8,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+658,test,female,True,11,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+659,test,male,True,16,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+661,test,female,True,19,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+663,test,male,True,9,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+664,test,male,True,2,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+666,test,male,True,5,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+669,test,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+676,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+679,test,male,True,8,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+682,test,male,True,12,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+683,test,male,True,6,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+688,test,male,True,19,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+689,test,female,True,13,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+691,test,male,True,11,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+693,test,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+696,test,male,True,13,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+699,test,male,True,16,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+705,test,male,True,20,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+708,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+709,test,male,True,10,1,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+710,test,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+712,test,male,True,0,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+715,test,male,True,7,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+716,test,male,True,15,1,1,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+717,test,male,True,1,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,
+718,test,male,True,3,0,0,False,False,False,False,"transcript, mfcc, egemaps",METADATA_ONLY_NO_FEATURES,

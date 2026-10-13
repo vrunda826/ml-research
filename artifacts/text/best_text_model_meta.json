@@ -1,0 +1,8 @@
+{
+  "best_model_name": "Text_MiniLM_LogisticRegression_Balanced",
+  "best_macro_f1": 0.656,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimensions": 384,
+  "selection_metric": "macro_f1",
+  "selection_dataset": "dev"
+}

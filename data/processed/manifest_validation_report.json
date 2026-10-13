@@ -1,0 +1,227 @@
+{
+  "validation_passed": true,
+  "total_manifest_participants": 275,
+  "unique_participant_ids": 275,
+  "duplicate_id_count": 0,
+  "has_split_overlap": false,
+  "split_overlaps": {
+    "train_dev": [],
+    "train_test": [],
+    "dev_test": []
+  },
+  "score_validation": {
+    "expected_range": "0-24",
+    "invalid_score_count": 0,
+    "invalid_scores": []
+  },
+  "official_binary_vs_cutoff10_discrepancies": {
+    "count": 20,
+    "description": "Participants where PHQ_Score >= 10 but official AVEC PHQ_Binary == 0 due to clinical DSM item criteria in official AVEC challenge metadata.",
+    "discrepancies": [
+      {
+        "participant_id": "325",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "335",
+        "split": "train",
+        "phq_score": 12,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "352",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "356",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "380",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "386",
+        "split": "train",
+        "phq_score": 11,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "409",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "413",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "418",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "422",
+        "split": "train",
+        "phq_score": 12,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "459",
+        "split": "train",
+        "phq_score": 16,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "483",
+        "split": "train",
+        "phq_score": 15,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "633",
+        "split": "train",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "320",
+        "split": "dev",
+        "phq_score": 11,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "344",
+        "split": "dev",
+        "phq_score": 11,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "433",
+        "split": "dev",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "682",
+        "split": "test",
+        "phq_score": 12,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "691",
+        "split": "test",
+        "phq_score": 11,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "696",
+        "split": "test",
+        "phq_score": 13,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      },
+      {
+        "participant_id": "709",
+        "split": "test",
+        "phq_score": 10,
+        "cutoff10_label": 1,
+        "official_binary_label": 0
+      }
+    ]
+  },
+  "split_summary": {
+    "train": {
+      "total_metadata_participants": 163,
+      "with_extracted_features": 125,
+      "missing_extracted_features": 38,
+      "fully_complete_ready_for_experiments": 125,
+      "labeled_participants": 163,
+      "unlabeled_participants": 0,
+      "class_distribution_cutoff10": {
+        "depressed_phq_ge_10": 50,
+        "non_depressed_phq_lt_10": 113,
+        "prevalence_rate": 0.3067
+      },
+      "extracted_features_class_distribution": {
+        "depressed_phq_ge_10": 38,
+        "non_depressed_phq_lt_10": 87,
+        "total_extracted": 125
+      }
+    },
+    "dev": {
+      "total_metadata_participants": 56,
+      "with_extracted_features": 44,
+      "missing_extracted_features": 12,
+      "fully_complete_ready_for_experiments": 44,
+      "labeled_participants": 56,
+      "unlabeled_participants": 0,
+      "class_distribution_cutoff10": {
+        "depressed_phq_ge_10": 15,
+        "non_depressed_phq_lt_10": 41,
+        "prevalence_rate": 0.2679
+      },
+      "extracted_features_class_distribution": {
+        "depressed_phq_ge_10": 11,
+        "non_depressed_phq_lt_10": 33,
+        "total_extracted": 44
+      }
+    },
+    "test": {
+      "total_metadata_participants": 56,
+      "with_extracted_features": 0,
+      "missing_extracted_features": 56,
+      "fully_complete_ready_for_experiments": 0,
+      "labeled_participants": 56,
+      "unlabeled_participants": 0,
+      "class_distribution_cutoff10": {
+        "depressed_phq_ge_10": 21,
+        "non_depressed_phq_lt_10": 35,
+        "prevalence_rate": 0.375
+      },
+      "extracted_features_class_distribution": {
+        "depressed_phq_ge_10": 0,
+        "non_depressed_phq_lt_10": 0,
+        "total_extracted": 0
+      }
+    }
+  },
+  "extracted_features_summary": {
+    "total_with_extracted_features": 169,
+    "total_in_official_metadata": 275,
+    "unmatched_participants_with_features": 0,
+    "complete_train_participants": 125,
+    "complete_dev_participants": 44,
+    "complete_test_participants": 0
+  }
+}

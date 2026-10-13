@@ -1,0 +1,142 @@
+{
+  "random_seed": 42,
+  "paths": {
+    "manifest_csv": "data/processed/participant_manifest.csv",
+    "lightweight_dir": "data/processed/lightweight",
+    "audio_features_dir": "data/processed/features/audio",
+    "text_features_dir": "data/processed/features/text",
+    "multimodal_features_dir": "data/processed/features/multimodal",
+    "artifacts_dir": "artifacts",
+    "reports_dir": "reports"
+  },
+  "protocol": {
+    "target_column": "phq_binary_cutoff10",
+    "phq_score_column": "phq_score",
+    "depression_cutoff": 10,
+    "primary_selection_metric": "macro_f1",
+    "complementary_metrics": ["depression_recall", "pr_auc", "accuracy", "depression_f1"],
+    "model_selection_split": "dev",
+    "disallow_test_labels": true
+  },
+  "models": {
+    "B0": {
+      "name": "MajorityClassBaseline",
+      "modality": "none"
+    },
+    "B1a": {
+      "name": "Audio_eGeMAPS_LogisticRegression",
+      "modality": "audio",
+      "feature_type": "egemaps",
+      "summary_stats": ["mean", "std"],
+      "classifier": "LogisticRegression",
+      "params": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "class_weight": null,
+        "random_state": 42
+      }
+    },
+    "B1b": {
+      "name": "Audio_eGeMAPS_LinearSVM",
+      "modality": "audio",
+      "feature_type": "egemaps",
+      "summary_stats": ["mean", "std"],
+      "classifier": "LinearSVC",
+      "params": {
+        "C": 1.0,
+        "max_iter": 2000,
+        "random_state": 42
+      }
+    },
+    "B1c": {
+      "name": "Audio_MFCC_LogisticRegression",
+      "modality": "audio",
+      "feature_type": "mfcc",
+      "summary_stats": ["mean", "std"],
+      "classifier": "LogisticRegression",
+      "params": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "class_weight": null,
+        "random_state": 42
+      }
+    },
+    "B2": {
+      "name": "Text_MiniLM_LogisticRegression",
+      "modality": "text",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "aggregation": "mean",
+      "classifier": "LogisticRegression",
+      "params": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "class_weight": null,
+        "random_state": 42
+      }
+    },
+    "B3a": {
+      "name": "Multimodal_eGeMAPS_Text_LogisticRegression",
+      "modality": "multimodal",
+      "audio_feature": "egemaps",
+      "text_feature": "all-MiniLM-L6-v2",
+      "fusion": "concatenation",
+      "classifier": "LogisticRegression",
+      "params": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "class_weight": null,
+        "random_state": 42
+      }
+    },
+    "B3b": {
+      "name": "Multimodal_MFCC_Text_LogisticRegression",
+      "modality": "multimodal",
+      "audio_feature": "mfcc",
+      "text_feature": "all-MiniLM-L6-v2",
+      "fusion": "concatenation",
+      "classifier": "LogisticRegression",
+      "params": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "class_weight": null,
+        "random_state": 42
+      }
+    }
+  },
+  "phase6": {
+    "random_seed": 42,
+    "n_folds": 5,
+    "phq_cutoff": 10,
+    "hsed_quantiles": [0.70, 0.75, 0.80],
+    "default_alpha": 100.0,
+    "alpha_grid": [0.1, 1.0, 10.0, 100.0],
+    "quantile_method": "linear",
+    "modalities": {
+      "egemaps": {
+        "name": "Audio_eGeMAPS",
+        "feature_file": "data/processed/features/audio/egemaps_features.csv",
+        "type": "audio"
+      },
+      "mfcc": {
+        "name": "Audio_MFCC",
+        "feature_file": "data/processed/features/audio/mfcc_features.csv",
+        "type": "audio"
+      },
+      "text_minilm": {
+        "name": "Text_MiniLM",
+        "feature_file": "data/processed/features/text/text_embeddings_minilm.csv",
+        "type": "text"
+      },
+      "mm_egemaps_text": {
+        "name": "MM_eGeMAPS_Text",
+        "feature_file": "data/processed/features/multimodal/multimodal_egemaps_text.csv",
+        "type": "multimodal"
+      },
+      "mm_mfcc_text": {
+        "name": "MM_MFCC_Text",
+        "feature_file": "data/processed/features/multimodal/multimodal_mfcc_text.csv",
+        "type": "multimodal"
+      }
+    }
+  }
+}
