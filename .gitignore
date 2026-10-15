@@ -79,3 +79,11 @@ scratch/
 # Antigravity & Agent Internals
 .gemini/
 .system_generated/
+
+# ==============================================================================
+# Excluded Research Experiments (Per User Directive)
+# ==============================================================================
+reports/cpic_evaluation/
+scripts/run_cpic_audit_and_generate_reports.py
+tests/test_cpic_evaluation.py
+

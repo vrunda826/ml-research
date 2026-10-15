@@ -163,9 +163,9 @@
   "split_summary": {
     "train": {
       "total_metadata_participants": 163,
-      "with_extracted_features": 125,
-      "missing_extracted_features": 38,
-      "fully_complete_ready_for_experiments": 125,
+      "with_extracted_features": 163,
+      "missing_extracted_features": 0,
+      "fully_complete_ready_for_experiments": 163,
       "labeled_participants": 163,
       "unlabeled_participants": 0,
       "class_distribution_cutoff10": {
@@ -174,16 +174,16 @@
         "prevalence_rate": 0.3067
       },
       "extracted_features_class_distribution": {
-        "depressed_phq_ge_10": 38,
-        "non_depressed_phq_lt_10": 87,
-        "total_extracted": 125
+        "depressed_phq_ge_10": 50,
+        "non_depressed_phq_lt_10": 113,
+        "total_extracted": 163
       }
     },
     "dev": {
       "total_metadata_participants": 56,
-      "with_extracted_features": 44,
-      "missing_extracted_features": 12,
-      "fully_complete_ready_for_experiments": 44,
+      "with_extracted_features": 56,
+      "missing_extracted_features": 0,
+      "fully_complete_ready_for_experiments": 56,
       "labeled_participants": 56,
       "unlabeled_participants": 0,
       "class_distribution_cutoff10": {
@@ -192,16 +192,16 @@
         "prevalence_rate": 0.2679
       },
       "extracted_features_class_distribution": {
-        "depressed_phq_ge_10": 11,
-        "non_depressed_phq_lt_10": 33,
-        "total_extracted": 44
+        "depressed_phq_ge_10": 15,
+        "non_depressed_phq_lt_10": 41,
+        "total_extracted": 56
       }
     },
     "test": {
       "total_metadata_participants": 56,
-      "with_extracted_features": 0,
-      "missing_extracted_features": 56,
-      "fully_complete_ready_for_experiments": 0,
+      "with_extracted_features": 51,
+      "missing_extracted_features": 5,
+      "fully_complete_ready_for_experiments": 51,
       "labeled_participants": 56,
       "unlabeled_participants": 0,
       "class_distribution_cutoff10": {
@@ -210,18 +210,18 @@
         "prevalence_rate": 0.375
       },
       "extracted_features_class_distribution": {
-        "depressed_phq_ge_10": 0,
-        "non_depressed_phq_lt_10": 0,
-        "total_extracted": 0
+        "depressed_phq_ge_10": 21,
+        "non_depressed_phq_lt_10": 30,
+        "total_extracted": 51
       }
     }
   },
   "extracted_features_summary": {
-    "total_with_extracted_features": 169,
+    "total_with_extracted_features": 270,
     "total_in_official_metadata": 275,
     "unmatched_participants_with_features": 0,
-    "complete_train_participants": 125,
-    "complete_dev_participants": 44,
-    "complete_test_participants": 0
+    "complete_train_participants": 163,
+    "complete_dev_participants": 56,
+    "complete_test_participants": 51
   }
 }

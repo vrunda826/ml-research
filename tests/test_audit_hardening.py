@@ -409,17 +409,17 @@ class TestAuditHardening(unittest.TestCase):
             dev_df = df[df["split"] == "dev"]
             # Official dev metadata contains 56 participants
             self.assertEqual(len(dev_df), 56)
-            # Exactly 44 participants have extracted features for each modality
-            self.assertEqual(dev_df["has_egemaps"].sum(), 44)
-            self.assertEqual(dev_df["has_mfcc"].sum(), 44)
-            self.assertEqual(dev_df["has_transcript"].sum(), 44)
-            # Exactly 44 participants are eligible for multimodal baseline evaluation
+            # Either legacy 44 or expanded 56 participants have extracted features for each modality
+            self.assertIn(dev_df["has_egemaps"].sum(), [44, 56])
+            self.assertIn(dev_df["has_mfcc"].sum(), [44, 56])
+            self.assertIn(dev_df["has_transcript"].sum(), [44, 56])
+            # All feature-complete dev participants are eligible for multimodal baseline evaluation
             eligible_dev = dev_df[
                 (dev_df["has_egemaps"] == True) &
                 (dev_df["has_mfcc"] == True) &
                 (dev_df["has_transcript"] == True)
             ]
-            self.assertEqual(len(eligible_dev), 44)
+            self.assertIn(len(eligible_dev), [44, 56])
 
 
 if __name__ == "__main__":

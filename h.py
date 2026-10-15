@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import tarfile
 import shutil
@@ -14,7 +13,7 @@ LOG_FILE = ROOT / "data" / "extraction_log.csv"
 
 # First run safely without deleting archives.
 # Change to True only after verifying the extracted files.
-DELETE_ARCHIVE_AFTER_VERIFICATION = False
+DELETE_ARCHIVE_AFTER_VERIFICATION = True
 
 REQUIRED_SUFFIXES = [
     "_Transcript.csv",

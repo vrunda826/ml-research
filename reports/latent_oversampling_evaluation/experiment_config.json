@@ -1,0 +1,30 @@
+{
+  "study_title": "Controlled Evaluation of Latent-Space Oversampling on DAIC-WOZ",
+  "date": "2026-10-15",
+  "seeds": [
+    17,
+    42,
+    73,
+    101,
+    2026
+  ],
+  "cohort": {
+    "train_participants": 163,
+    "dev_participants": 56,
+    "train_positive": 50,
+    "dev_positive": 15
+  },
+  "experimental_conditions": [
+    "E0_Baseline_B3",
+    "E1_Ordinary_Random_Oversampling",
+    "E2a_Linear_Latent_PCA",
+    "E2b_Neural_Latent_Autoencoder",
+    "E3_Selected_Optimal",
+    "E4_Constrained_Latent_Manifold"
+  ],
+  "optimal_e3_cv_params": {
+    "target_ratio": 0.5,
+    "k_neighbors": 3
+  },
+  "bootstrap_replicates": 1000
+}

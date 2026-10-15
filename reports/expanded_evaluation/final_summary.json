@@ -1,0 +1,39 @@
+{
+  "status": "EVALUATION_COMPLETED_SUCCESSFULLY",
+  "runtime_seconds": 109.36299538612366,
+  "cohort_summary": {
+    "n_train": 163,
+    "n_dev": 56,
+    "train_positive": 50,
+    "dev_positive": 15
+  },
+  "top_classification_model": {
+    "model_name": "Ablation_3_Baseline_Plus_DiscrepancyWeighting",
+    "macro_f1_mean": 0.7803921568627451,
+    "balanced_accuracy_mean": 0.7634146341463415
+  },
+  "top_regression_model": {
+    "model_name": "B3_MFCC_Text",
+    "mae_mean": 3.791254675673561,
+    "rmse_mean": 4.758531792402623
+  },
+  "proposed_vs_baseline": {
+    "b3_macro_f1": 0.7803921568627451,
+    "b3_mae": 3.791254675673561,
+    "b10_macro_f1": 0.7554895596888829,
+    "b10_mae": 3.8356665913215173,
+    "delta_f1": -0.02490259717386223,
+    "delta_mae": 0.044411915647956324,
+    "f1_statistically_significant": false
+  },
+  "hsed_verdict": {
+    "hypothesis_supported": false,
+    "phenotype_interpretation": "ALGORITHMIC_RESIDUAL_SUBGROUP_CONSISTENT_WITH_REGRESSION_TO_MEAN",
+    "rationale": [
+      "B10 full proposed model does not yield a statistically significant improvement over B3 multimodal baseline.",
+      "Discrepancy correlates heavily with baseline severity; severity-controlled discrepancy eliminates shrinkage distortion.",
+      "Candidate membership exhibits substantial sensitivity to threshold definition and modality selection.",
+      "Development sample size (N=56, 15 high-PHQ) provides wide uncertainty intervals."
+    ]
+  }
+}

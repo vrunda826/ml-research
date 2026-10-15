@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Latent-Space Oversampling Final Research Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 40px auto; padding: 0 20px; color: #24292e; background-color: #f6f8fa; }
+.container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+h1, h2, h3 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; color: #1f2328; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+th, td { border: 1px solid #d0d7de; padding: 8px 12px; text-align: left; }
+th { background-color: #f6f8fa; font-weight: 600; }
+tr:nth-child(even) { background-color: #fbfcfd; }
+blockquote.decision { padding: 20px; margin: 20px 0; border-left: 6px solid #cf222e; background-color: #ffebe9; color: #cf222e; border-radius: 4px; font-size: 16px; font-weight: bold; }
+.figure-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 20px; margin: 30px 0; }
+.figure-card { background: #fff; border: 1px solid #d0d7de; border-radius: 6px; padding: 15px; text-align: center; }
+.figure-card img { max-width: 100%; height: auto; border-radius: 4px; }
+.figure-caption { font-size: 13px; color: #57606a; margin-top: 10px; font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Final Research Report: Controlled Evaluation of Latent-Space Oversampling</h1>
+<p><strong>Evaluation Scope:</strong> Expanded DAIC-WOZ Cohort (N=219 labeled participants) | <strong>Date:</strong> October 15, 2026</p>
+<blockquote class="decision">
+EXPLICIT DECISION: NO-GO<br>
+Latent-space oversampling does not improve depression detection over the standard multimodal baseline (B3). It causes a statistically significant degradation in Macro-F1 (&Delta; = -0.1595, p = 0.008) and noticeably worsens continuous PHQ-8 regression error (MAE increases from 3.791 to 4.018). The method should be abandoned in favor of feature engineering and speaker filtering.
+</blockquote>
+<h2>Research Figures</h2>
+<div class="figure-grid">
+  <div class="figure-card">
+    <img src="plots/classification_metrics_comparison.png" alt="Classification Comparison">
+    <div class="figure-caption">Figure 1: Classification Performance Across Oversampling Conditions (Dev N=56)</div>
+  </div>
+  <div class="figure-card">
+    <img src="plots/continuous_metrics_comparison.png" alt="Continuous Error Comparison">
+    <div class="figure-caption">Figure 2: Continuous Severity Prediction Error across Conditions (Dev N=56)</div>
+  </div>
+  <div class="figure-card">
+    <img src="plots/bootstrap_delta_distributions.png" alt="Bootstrap Delta Distributions">
+    <div class="figure-caption">Figure 3: Paired Bootstrap 95% Confidence Intervals for Metric Differences</div>
+  </div>
+  <div class="figure-card">
+    <img src="plots/sensitivity_grid_heatmap.png" alt="Sensitivity Grid Heatmap">
+    <div class="figure-caption">Figure 4: Training 5-Fold CV Macro-F1 across Target Ratio and Neighbor Grid</div>
+  </div>
+  <div class="figure-card">
+    <img src="plots/seed_variability_boxplot.png" alt="Seed Variability Boxplot">
+    <div class="figure-caption">Figure 5: Metric Stability across 5 Random Seeds</div>
+  </div>
+  <div class="figure-card">
+    <img src="plots/latent_space_tsne_pca.png" alt="Latent Space Geometry">
+    <div class="figure-caption">Figure 6: Latent Manifold Geometry: Real Positive, Real Negative, and Synthetic Points</div>
+  </div>
+</div>
+<h2>Development Results Table</h2>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>condition</th>
+      <th>macro_f1_fixed_mean</th>
+      <th>macro_f1_fixed_std</th>
+      <th>balanced_acc_fixed_mean</th>
+      <th>precision_fixed_mean</th>
+      <th>recall_fixed_mean</th>
+      <th>mae_mean</th>
+      <th>mae_std</th>
+      <th>rmse_mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E0_Baseline_B3</td>
+      <td>0.780392</td>
+      <td>0.000000</td>
+      <td>0.763415</td>
+      <td>0.750000</td>
+      <td>0.600000</td>
+      <td>3.791255</td>
+      <td>0.000000</td>
+      <td>4.758532</td>
+    </tr>
+    <tr>
+      <td>E1_Ordinary_Random_Oversampling</td>
+      <td>0.762037</td>
+      <td>0.012840</td>
+      <td>0.751220</td>
+      <td>0.693956</td>
+      <td>0.600000</td>
+      <td>3.929689</td>
+      <td>0.029071</td>
+      <td>4.825515</td>
+    </tr>
+    <tr>
+      <td>E2b_Neural_Latent_Autoencoder</td>
+      <td>0.647801</td>
+      <td>0.075826</td>
+      <td>0.671870</td>
+      <td>0.450747</td>
+      <td>0.626667</td>
+      <td>4.469373</td>
+      <td>0.294009</td>
+      <td>5.278924</td>
+    </tr>
+    <tr>
+      <td>E4_Constrained_Latent_Manifold</td>
+      <td>0.634938</td>
+      <td>0.027217</td>
+      <td>0.637561</td>
+      <td>0.459881</td>
+      <td>0.480000</td>
+      <td>4.027982</td>
+      <td>0.049966</td>
+      <td>4.863455</td>
+    </tr>
+    <tr>
+      <td>E2a_Linear_Latent_PCA</td>
+      <td>0.631957</td>
+      <td>0.027910</td>
+      <td>0.635122</td>
+      <td>0.454048</td>
+      <td>0.480000</td>
+      <td>4.017523</td>
+      <td>0.049925</td>
+      <td>4.854790</td>
+    </tr>
+    <tr>
+      <td>E3_Selected_Optimal</td>
+      <td>0.631957</td>
+      <td>0.027910</td>
+      <td>0.635122</td>
+      <td>0.454048</td>
+      <td>0.480000</td>
+      <td>4.017523</td>
+      <td>0.049925</td>
+      <td>4.854790</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

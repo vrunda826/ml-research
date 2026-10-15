@@ -1,0 +1,41 @@
+{
+  "evaluation_date": "2026-10-15",
+  "random_seeds": [
+    17,
+    42,
+    73,
+    101,
+    2026
+  ],
+  "cohort": {
+    "train_participants": 163,
+    "dev_participants": 56,
+    "train_positive_n": 50,
+    "dev_positive_n": 15,
+    "phq_depression_cutoff": 10.0
+  },
+  "models_evaluated": [
+    "Ablation_3_Baseline_Plus_DiscrepancyWeighting",
+    "Ablation_5_Baseline_Plus_LatentOversampling",
+    "Ablation_7_Discrepancy_Plus_LatentOversampling",
+    "Ablation_8_Contrastive_Plus_LatentOversampling",
+    "B0_Majority",
+    "B10_DA_Multitask_LatentInterpolation",
+    "B1_MFCC",
+    "B1_eGeMAPS",
+    "B2_Text_MiniLM",
+    "B3_MFCC_Text",
+    "B4_Multitask",
+    "B5_SupCon",
+    "B6_RandomOversampling",
+    "B7_DiscrepancySampling",
+    "B7_SeverityControlled",
+    "B8_HardNegativeTriplet",
+    "B9_DA_SupCon"
+  ],
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 42
+  },
+  "device": "cpu"
+}

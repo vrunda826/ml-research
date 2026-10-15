@@ -1,0 +1,35 @@
+{
+  "execution_date": "2026-10-14",
+  "cohort": {
+    "train": 125,
+    "dev": 44,
+    "depressed_train": 38,
+    "depressed_dev": 11
+  },
+  "best_binary_classification_model": {
+    "model_id": "B4_Multitask_Net",
+    "macro_f1": 0.7351,
+    "accuracy": 0.7955,
+    "depression_recall": 0.6364
+  },
+  "best_continuous_regression_model": {
+    "model_id": "B3_Multimodal_MFCC_Text",
+    "mae": 3.8032,
+    "r2": 0.2826,
+    "spearman_rho": 0.545
+  },
+  "proposed_model_b10": {
+    "model_id": "B10_Full_Proposed_Model",
+    "macro_f1": 0.6857,
+    "depression_recall": 0.7273,
+    "mae": 3.9234,
+    "dep_mean_discrepancy": 5.56,
+    "gap_reduction_vs_b3": -0.3646
+  },
+  "hypothesis_verdict": {
+    "claim_a_predictive_accuracy": "SUPPORTED_FOR_TEXT_AND_MULTIMODAL",
+    "claim_b_excess_underprediction": "REFUTED_BY_NULL_AND_DUMMY",
+    "claim_c_distinct_hsed_subgroup": "UNSUPPORTED_EXPLAINED_BY_RTM_AND_SEVERITY_SELECTION"
+  },
+  "completion_status": "ALL_B0_B10_EXPERIMENTS_COMPLETED_SUCCESSFULLY"
+}
